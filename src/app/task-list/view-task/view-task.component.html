@@ -1,0 +1,36 @@
+<ng-template #viewTaskPopup>
+    <div class="task-popup" >
+        <div class="header">
+            <div class="title">Просмотр задачи</div> <button class="button close" mat-dialog-close><i class="fa-solid fa-xmark"></i></button>
+            <div class="clear"></div>
+        </div>
+
+                <div class="form-group date">
+                    <label for="date">Дата создания</label>
+                    <input type="text" [value]="task.date" name="date" class="form-control" placeholder="23 ноября 2023" disabled>   
+
+                </div>
+                <div class="form-group name">
+                    <label for="name">Название</label>
+                    <input type="text" [value]="task.name" name="name" class="form-control" disabled>   
+                </div>
+                <div class="form-group description">
+                    <label for="description">Описание</label>
+                    <textarea type="text" [value]="task.description" name="description" rows="4" class="form-control" disabled> </textarea>
+                </div>
+                <div class="form-group priority">
+                        <legend>Приоритет</legend>
+                        <mat-radio-group class="priority" [value]="task.priority" name="priority" >
+                            <mat-radio-button *ngFor="let item of priority; let i=index" [value]="item" >
+                              {{item}}
+                            </mat-radio-button>
+                          </mat-radio-group>
+                </div>
+                <div class="form-group member">
+                    <label for="member">Исполнитель</label>
+                    <select name="member" disabled>
+                        <option selected>{{task.member}}</option>
+                    </select>  
+                </div>        
+    </div>
+</ng-template>

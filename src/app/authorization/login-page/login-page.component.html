@@ -1,0 +1,29 @@
+<section>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-form">
+                <h1 class="title">Авторизация
+                    <div class="error-message" *ngIf="isLoginMode==false">Такого пользователя не существует</div>
+                </h1>
+                <form [formGroup]="authForm" (ngSubmit)="onSubmit(authForm)">
+                    
+                    <div class="email">                       
+                        <input type="email" formControlName="email" >
+                        <label for="email">Эл. почта</label>
+                        <span class="error" *ngIf="authForm.get('email')?.errors && authForm.get('email')?.touched">Введите почту в формате @gmail.com</span>
+                    </div>
+                    <div class="password">
+                        <input [type]="password" formControlName="password">   
+                        <span class="show-pass" (click)="onShowedPass()">
+                            <i class="far fa-eye" *ngIf="show"></i>
+                            <i class="far fa-eye-slash" *ngIf="!show"></i>
+                        </span> 
+                        <label for="password">Пароль</label>
+                        <span class="error" *ngIf="authForm.get('password')?.errors && authForm.get('password')?.touched">Пароль должен состоять минимум из 8 символов</span>                  
+                    </div>
+                    <div class="buttons"><button type="submit" [disabled]="authForm.invalid" class="btn btn-default">Войти в систему</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

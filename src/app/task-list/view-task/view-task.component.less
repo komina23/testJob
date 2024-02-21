@@ -1,0 +1,89 @@
+@import url(../../../assets/styles/mixins.less);
+.task-popup{
+    padding: 30px 50px 50px;
+    border-radius: 10px;
+    width: 765px;
+    box-sizing: border-box;
+    .title{
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        float: left;
+    }
+    .sub-button{
+        margin-left: 20px;
+    }
+    button.close{
+        float: right;
+    }
+    .form-group{
+        padding-bottom: 25px;
+        label{
+            display: block;
+        }
+        input[type=text],textarea{
+            width: 100%;
+            max-width: 100%;
+        }
+        &.date{
+            width: 31%;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        &.name{
+            width: 65%;
+            display: inline-block;
+        }
+        &.priority{
+            pointer-events: none;
+            label{
+                //display: inline-block;
+                margin-right: 50px;
+                cursor: pointer;
+            }
+            span{
+                display: inline-block;
+                padding-top: 4px;
+            }
+            input[type=radio]{
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                border: 1px solid @colorRed;
+                border-radius: 50%;
+                margin-right: 5px;
+                vertical-align: top;
+                
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    margin: 3px 0 0 3px;
+                    border-radius: 50%;
+                }
+                &:checked {
+                    &:before {
+                        background-color:@colorRed;
+                    }
+                  }
+            }
+            #medium{
+                border-color: @colorOrange;
+                &:checked {
+                    &:before {
+                        background-color:@colorOrange;
+                    }
+                }
+            }
+            #low{
+                border-color: @colorBlue;
+                &:checked {
+                    &:before {
+                        background-color:@colorBlue;
+                    }
+                }
+            }
+        }
+    }
+}

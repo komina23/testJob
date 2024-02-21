@@ -1,0 +1,14 @@
+<header>
+    <div class="left">
+        <h1 class="title">{{title}}</h1>
+        <div class="sort">Сортировать по:
+            <select name="sortParams" (change)="onSortChange($event)">
+                <option *ngFor="let param of sortParams" [value]="param.value" [selected]="param.selected">{{param.viewValue}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="right">
+        <div class="user-name" *ngIf="userInfo"><img src="../../../assets/images/{{photo}}" alt=""><span>{{ name }}</span></div>
+        <app-create-task></app-create-task>
+    </div>    
+</header>

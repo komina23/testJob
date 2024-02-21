@@ -1,0 +1,110 @@
+@import url(../../../assets/styles/mixins.less);
+section{
+    height: 100%;
+    background: @colorWhite;
+    width: 300px;
+    float: left;
+    position: relative;
+    .logo{
+        padding: 30px;
+    }
+}
+.logout{
+    background: none;
+    border: 0 none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    line-height: 27px;
+    padding: 20px 25px;
+    span{
+        position: relative;
+    }
+    svg{
+        vertical-align: top;
+        margin-right: 10px;
+    }
+    &:before{
+        content: '';
+        border-left: 4px solid @colorBlue;
+        position: absolute;
+        left: -4px;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        background: linear-gradient(to right, rgba(@colorBlue,0.1) 0%,rgba(@colorBlue,0) 100%);
+        transition: all 0.5s ease;  
+    }
+    &:hover,&:focus{
+        background: none;
+        border: 0 none;
+        outline: none;
+        color: @colorBlue;
+        &:before{
+            left:0;
+            right: 0;
+        }
+        svg circle,path {
+            stroke: @colorBlue;
+        }
+    }
+}
+.navigate-menu{
+    nav{
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+                &:last-child{
+                    margin-top: 20px;
+                    padding-top: 20px;
+                    border-top: 1px solid @colorLightGrey;
+                }
+
+                a{
+                    font-size: 14px;
+                    color: @colorDarkGrey;
+                    text-decoration: none;
+                    transition: all 0.3s linear;  
+                    position: relative;
+                    display: block;
+                    padding: 20px 25px;  
+
+                    &:before{
+                        content: '';
+                        border-left: 4px solid @colorBlue;
+                        position: absolute;
+                        left: -4px;
+                        top: 0;
+                        bottom: 0;
+                        right: 100%;
+                        background: linear-gradient(to right, rgba(@colorBlue,0.1) 0%,rgba(@colorBlue,0) 100%);
+                        transition: all 0.5s ease;  
+                    }
+                            
+                    &:hover,&.active{
+                        color: @colorBlue;
+                        &:before{
+                            left:0;
+                            right: 0;
+                        }
+                        svg circle,path {
+                            stroke: @colorBlue;
+                        }
+                    }
+
+                    >span{
+                        display: inline-block;
+                        padding-right: 15px;
+                    }  
+                    span{
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
+}
+.mat-mdc-radio-button.mat-accent#mat-radio-2 {
+  --mdc-radio-disabled-selected-icon-color: #000;
+  --mdc-radio-disabled-unselected-icon-color: #000;
+  --mdc-radio-unselected-focus-icon-color: #212121;
+  --mdc-radio-unselected-hover-icon-color: #212121;
+  --mdc-radio-unselected-icon-color: #F2565C;
+  --mdc-radio-unselected-pressed-icon-color: #F2565C;
+  --mdc-radio-selected-focus-icon-color: #F2565C;
+  --mdc-radio-selected-hover-icon-color: #F2565C;
+  --mdc-radio-selected-icon-color: #F2565C;
+  --mdc-radio-selected-pressed-icon-color: #F2565C;
+  --mat-mdc-radio-ripple-color: #000;
+  --mat-mdc-radio-checked-ripple-color: #ffffff;
+}
+.mat-mdc-radio-button.mat-accent#mat-radio-3 {
+  --mdc-radio-disabled-selected-icon-color: #000;
+  --mdc-radio-disabled-unselected-icon-color: #000;
+  --mdc-radio-unselected-focus-icon-color: #212121;
+  --mdc-radio-unselected-hover-icon-color: #212121;
+  --mdc-radio-unselected-icon-color: #EAA238;
+  --mdc-radio-unselected-pressed-icon-color: #EAA238;
+  --mdc-radio-selected-focus-icon-color: #EAA238;
+  --mdc-radio-selected-hover-icon-color: #EAA238;
+  --mdc-radio-selected-icon-color: #EAA238;
+  --mdc-radio-selected-pressed-icon-color: #EAA238;
+  --mat-mdc-radio-ripple-color: #000;
+  --mat-mdc-radio-checked-ripple-color: #ffffff;
+}
+.mat-mdc-radio-button.mat-accent#mat-radio-4 {
+  --mdc-radio-disabled-selected-icon-color: #000;
+  --mdc-radio-disabled-unselected-icon-color: #000;
+  --mdc-radio-unselected-focus-icon-color: #212121;
+  --mdc-radio-unselected-hover-icon-color: #212121;
+  --mdc-radio-unselected-icon-color: #4971FF;
+  --mdc-radio-unselected-pressed-icon-color: #4971FF;
+  --mdc-radio-selected-focus-icon-color: #4971FF;
+  --mdc-radio-selected-hover-icon-color: #4971FF;
+  --mdc-radio-selected-icon-color: #4971FF;
+  --mdc-radio-selected-pressed-icon-color: #4971FF;
+  --mat-mdc-radio-ripple-color: #000;
+  --mat-mdc-radio-checked-ripple-color: #ffffff;
+}
+section {
+  height: 100%;
+  width: 100%;
+}
+section .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .container .login-container {
+  border-radius: 16px;
+  position: relative;
+  background: #ffffff url(../../../assets/images/loginBg.jpg) 0 50% no-repeat;
+  box-shadow: 0 10px 30px 0 #AFB2BE;
+  width: 840px;
+  text-align: right;
+}
+section .container .login-container .login-form {
+  display: inline-block;
+  width: 318px;
+  text-align: left;
+  border-radius: 16px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.5);
+}
+section .container .login-container .login-form .email,
+section .container .login-container .login-form .password {
+  position: relative;
+}
+section .container .login-container .login-form input,
+section .container .login-container .login-form .btn {
+  width: 100%;
+}
+section .container .login-container .login-form label {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  color: #AFB2BE;
+  font-size: 17px;
+  transition: all 0.3s linear;
+}
+section .container .login-container .login-form .show-pass {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  z-index: 1;
+  cursor: pointer;
+  color: #AFB2BE;
+}
+section .container .login-container .login-form input {
+  position: relative;
+  z-index: 1;
+  border: 0 none;
+  border-bottom: 2px solid #AFB2BE;
+  border-radius: 0;
+  margin-bottom: 20px;
+  background: none;
+}
+section .container .login-container .login-form input:focus ~ label,
+section .container .login-container .login-form input.ng-dirty ~ label {
+  font-size: 12px;
+  top: -8px;
+}
+section .container .login-container .login-form input:focus {
+  border-color: #4971FF;
+}
+section .container .login-container .login-form input.ng-invalid.ng-touched {
+  border-bottom-color: #F2565C;
+}

@@ -1,0 +1,69 @@
+@import url(../../../assets/styles/mixins.less);
+section{
+    height: 100%;
+    width: 100%;
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .login-container{
+            border-radius: 16px;
+            position: relative;
+            background: @colorWhite url(../../../assets/images/loginBg.jpg) 0 50% no-repeat;
+            box-shadow: 0 10px 30px 0 @colorLightGreyTxt;
+            width: 840px;
+            text-align: right;
+            .login-form{
+                display: inline-block;
+                width: 318px;
+                text-align: left;
+                border-radius: 16px;
+                padding: 50px;
+                background: rgba(@colorWhite, 0.5);
+                .email,.password{
+                    position: relative;
+                }
+                input,.btn{
+                    width: 100%;
+                }
+                label{
+                    position: absolute;
+                    left: 10px;
+                    top: 6px;
+                    color: @colorLightGreyTxt;
+                    font-size: 17px;
+                    transition: all 0.3s linear;
+                }
+                .show-pass {
+                    position: absolute;
+                    right: 10px;
+                    top: 7px;
+                    z-index: 1;
+                    cursor: pointer;
+                    color: @colorLightGreyTxt;
+                }
+                input{
+                    position: relative;
+                    z-index: 1;
+                    border: 0 none;
+                    border-bottom: 2px solid @colorLightGreyTxt;
+                    border-radius: 0;
+                    margin-bottom: 20px;
+                    background: none;
+                    &:focus ~ label, &.ng-dirty ~ label{
+                        font-size: 12px;
+                        top: -8px;
+                    }
+                    &:focus{
+                        border-color: @colorBlue;
+                    }
+                    &.ng-invalid.ng-touched{
+                        border-bottom-color: @colorRed;
+                    }
+                }
+            }            
+        }
+    }
+}

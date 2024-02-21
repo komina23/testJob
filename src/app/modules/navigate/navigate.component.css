@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuBWYMZg.ttf) format('truetype');
+}
+section {
+  height: 100%;
+  background: #ffffff;
+  width: 300px;
+  float: left;
+  position: relative;
+}
+section .logo {
+  padding: 30px;
+}
+.logout {
+  background: none;
+  border: 0 none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  line-height: 27px;
+  padding: 20px 25px;
+}
+.logout span {
+  position: relative;
+}
+.logout svg {
+  vertical-align: top;
+  margin-right: 10px;
+}
+.logout:before {
+  content: '';
+  border-left: 4px solid #4971FF;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  background: linear-gradient(to right, rgba(73, 113, 255, 0.1) 0%, rgba(73, 113, 255, 0) 100%);
+  transition: all 0.5s ease;
+}
+.logout:hover,
+.logout:focus {
+  background: none;
+  border: 0 none;
+  outline: none;
+  color: #4971FF;
+}
+.logout:hover:before,
+.logout:focus:before {
+  left: 0;
+  right: 0;
+}
+.logout:hover svg circle,
+.logout:focus svg circle,
+.logout:hover path,
+.logout:focus path {
+  stroke: #4971FF;
+}
+.navigate-menu nav ul {
+  padding: 0;
+  margin: 0;
+}
+.navigate-menu nav ul li {
+  list-style: none;
+}
+.navigate-menu nav ul li:last-child {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #EAEAEA;
+}
+.navigate-menu nav ul li a {
+  font-size: 14px;
+  color: #484848;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  position: relative;
+  display: block;
+  padding: 20px 25px;
+}
+.navigate-menu nav ul li a:before {
+  content: '';
+  border-left: 4px solid #4971FF;
+  position: absolute;
+  left: -4px;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  background: linear-gradient(to right, rgba(73, 113, 255, 0.1) 0%, rgba(73, 113, 255, 0) 100%);
+  transition: all 0.5s ease;
+}
+.navigate-menu nav ul li a:hover,
+.navigate-menu nav ul li a.active {
+  color: #4971FF;
+}
+.navigate-menu nav ul li a:hover:before,
+.navigate-menu nav ul li a.active:before {
+  left: 0;
+  right: 0;
+}
+.navigate-menu nav ul li a:hover svg circle,
+.navigate-menu nav ul li a.active svg circle,
+.navigate-menu nav ul li a:hover path,
+.navigate-menu nav ul li a.active path {
+  stroke: #4971FF;
+}
+.navigate-menu nav ul li a > span {
+  display: inline-block;
+  padding-right: 15px;
+}
+.navigate-menu nav ul li a span {
+  position: relative;
+}
